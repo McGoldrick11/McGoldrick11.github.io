@@ -86,8 +86,8 @@
         hats.setAttribute("placeholder","Describe Your Hat")
         document.body.append(hats);
 
-        var ooga = document.createElement("br");
-        document.body.append(ooga);
+        var ooga = document.createElement("br"); /* tbh i have no idea what cloneNode does but it gets the line breaks to behave how i want*/
+        document.body.append(ooga.cloneNode());
 
         var colors = document.createElement("input");
         colors.setAttribute("type","text");
@@ -95,7 +95,8 @@
         colors.setAttribute("placeholder","which color?")
         document.body.append(colors);
 
-        document.body.append(ooga);
+        document.body.append(ooga.cloneNode());
+        document.body.append(ooga.cloneNode());
     }
 </script> 
 
